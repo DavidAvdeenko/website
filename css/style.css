@@ -1,0 +1,76 @@
+* {
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+   padding: 0;
+   color: #fff;
+}
+
+.slider {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+}
+
+.slider__item1 {
+   background: url("../img/407845-alexfas01.jpg") no-repeat;
+}
+
+.slider__item2 {
+   background: url("../img/1920x1080_953840_[www.ArtFile.ru].jpg") no-repeat;
+}
+
+.slider__item3 {
+   background: url("../img/3013-world_of_tanks-tank-bak-boevaya_mashina-samohodnaya_artilleriya-1920x1080.jpg") no-repeat;
+}
+
+.slider__item4 {
+   background: url("../img/world-of-tanks-kranvagn-tiazhelyi-shvedskii-tank-sneg-zima-s.jpg") no-repeat;
+}
+
+.slider__item {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #aeaeae;
+   flex-basis: 25%;
+   transition: all 0.5s;
+}
+
+.slider__item:hover {
+   flex-basis: 100%;
+}
+
+span {
+   font-size: 2rem;
+   text-shadow: 0px 0px 10px #000;
+}
+
+@media (max-width: 640px) {
+   .slider {
+      height: 100vh;
+      flex-flow: column;
+   }
+   .slider__item {
+      width: 100%;
+
+   }
+   .slider__item:hover {
+      flex-grow: 30%;
+   }
+   .slider__item1 {
+      background: url("../img/407845-alexfas01\ —\ копия.jpg") no-repeat;
+   }
+   .slider__item2 {
+      background: url("../img/1920x1080_953840_[www.ArtFile.ru]\ —\ копия.jpg") no-repeat;
+   }
+   .slider__item3 {
+      background: url("../img/3013-world_of_tanks-tank-bak-boevaya_mashina-samohodnaya_artilleriya-1920x1080\ —\ копия.jpg") no-repeat;
+   }
+   .slider__item4 {
+      background: url("../img/world-of-tanks-kranvagn-tiazhelyi-shvedskii-tank-sneg-zima-s\ —\ копия.jpg") no-repeat;
+   }
+}
